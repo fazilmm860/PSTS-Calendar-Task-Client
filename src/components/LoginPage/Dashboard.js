@@ -20,7 +20,7 @@ const Dashboard = () => {
     const DashboardValid = async () => {
         let token = localStorage.getItem("usersdatatoken");
 
-        const res = await fetch("https://url-shorten-forgot-pass.onrender.com/validuser", {
+        const res = await fetch("http://localhost:4001/api/validuser", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

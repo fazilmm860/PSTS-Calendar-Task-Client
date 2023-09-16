@@ -71,7 +71,7 @@ const Register = () => {
             // console.log("user registration succesfully done");
 
 
-            const data = await fetch("https://url-shorten-forgot-pass.onrender.com/register", {
+            const data = await fetch("http://localhost:4001/api/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
