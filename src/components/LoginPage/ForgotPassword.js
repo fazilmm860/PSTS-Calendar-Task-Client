@@ -50,7 +50,7 @@ const ForgotPassword = () => {
                 position: "top-center"
             });
         } else {
-            const res = await fetch(`/${id}/${token}`, {
+            const res = await fetch(`http://localhost:4001/api/${id}/${token}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

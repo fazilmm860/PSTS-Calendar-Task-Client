@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { LoginContext } from './ContextProvider/Context';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
-import InputShortener from './InputShortner';
 
 
-import BackgroundAnimate from './BackgroundAnimate';
+
+
 
 const Dashboard = () => {
 
@@ -14,7 +14,7 @@ const Dashboard = () => {
 
     const [data, setData] = useState(false);
 
-    const [inputValue, setInputValue] = useState("");
+
     const history = useNavigate();
 
     const DashboardValid = async () => {
@@ -51,7 +51,7 @@ const Dashboard = () => {
     return (
 
         <>
-            <BackgroundAnimate />
+            
             {
                 data ? <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                    

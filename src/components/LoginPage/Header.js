@@ -25,7 +25,7 @@ const Header = () => {
     const logoutuser = async () => {
         let token = localStorage.getItem("usersdatatoken");
 
-        const res = await fetch("http://localhost:8000/logout", {
+        const res = await fetch("http://localhost:4001/api/logout", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -65,7 +65,7 @@ const Header = () => {
                     <div className="avtar">
                         {
                             logindata.ValidUserOne ? <Avatar style={{ background: "salmon", fontWeight: "bold", textTransform: "capitalize" }} onClick={handleClick}>{logindata.ValidUserOne.fname[0].toUpperCase()}</Avatar> :
-                                <Avatar style={{ background: "blue" }} onClick={handleClick} />
+                                <Avatar style={{ background: "purple" }} onClick={handleClick} />
                         }
 
                     </div>

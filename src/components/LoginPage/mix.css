@@ -5,7 +5,7 @@ section{
 }
 
 section .form_data{
-    max-width: 550px;
+    max-width:555px;
     margin: 25px auto;
     padding: 35px 10px;
     box-shadow: 0 0 15px -10px #2d3748;
@@ -39,7 +39,7 @@ section .form_data{
 }
 
 .form_data form .form_input input{
-    width: 100%;
+    width: 90%;
     padding: 11px;
     border: 1px solid #d4d0d0;
     border-radius: 5px;
@@ -85,6 +85,7 @@ section .form_data{
     background-color: #EDF2F7;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 form .btn{
@@ -94,7 +95,7 @@ form .btn{
     border: none;
     outline: none;
     border-radius: 5px;
-    background-color:#1a365d;
+    background-color:#421a5d;
     color: #fff;
     font-weight: 600;
     font-size: 18px;
@@ -105,7 +106,7 @@ form .btn{
 
 
 form .btn:hover{
-    background-color: #97a1b1;
+    background-color: #ac97b1;
 }
 
 .form_data form p{
