@@ -23,11 +23,11 @@ section .form_data{
 
 .form_data h1{
     font-size: 34px;
-    color: #2a4365;
+    color: #512a65;
 }
 
 .form_data p{
-    color: #718096;
+    color: #8b7196;
     font-size: 15px;
     margin-top:9px;
 }
@@ -62,12 +62,12 @@ section .form_data{
 }
 
 .form_data form .form_input input:focus{
-    border:2px solid rgba(66, 153, 225,0.6);
+    border:2px solid rgba(185, 66, 225, 0.6);
 }
 
 
 .form_data form .form_input input::placeholder{
-    color: #8694a8;
+    color: #a086a8;
     letter-spacing: .5px;
     font-size: 14px;
 }
@@ -81,7 +81,7 @@ section .form_data{
     margin-top: 12px;
     font-size: 14px;
     font-weight: 600;
-    color: #2a4365;
+    color: #532a65;
     background-color: #EDF2F7;
     border-radius: 5px;
     cursor: pointer;
@@ -115,6 +115,6 @@ form .btn:hover{
 
 .form_data form a{
     text-decoration: none;
-    color:#718096 ;
+    color:#8a7196 ;
     border-bottom: 2px solid #8694a8;
 }
