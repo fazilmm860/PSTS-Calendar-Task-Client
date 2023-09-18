@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { LoginContext } from './ContextProvider/Context';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import TaskScheduler from '../Calender/TaskScheduler';
+
+
 
 
 
@@ -47,7 +50,12 @@ const Dashboard = () => {
         }, 2000)
 
     }, [])
+    
+    const [selectedDate, setSelectedDate] = useState(null);
 
+
+  
+    
     return (
 
         <>
@@ -61,7 +69,12 @@ const Dashboard = () => {
                     <CircularProgress />
                 </Box>
             }
+           
             
+             <TaskScheduler />
+           
+       
+           
 
         </>
 

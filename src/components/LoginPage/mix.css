@@ -1,4 +1,4 @@
-section{
+/* section{
     width: 100%;
     padding: 10px;
     min-height:calc(100vh - 80px);
@@ -118,4 +118,133 @@ form .btn:hover{
     text-decoration: none;
     color:#8a7196 ;
     border-bottom: 2px solid #8694a8;
+} */
+
+/* Apply a dark theme */
+section {
+    width: 100%;
+    padding: 10px;
+    min-height: calc(100vh - 80px);
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+section .form_data {
+    max-width: 555px;
+    margin: 25px auto;
+    padding: 35px 10px;
+    box-shadow: 0 0 15px -10px #2d3748;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444; /* Darker form background color */
+}
+
+.form_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_data h1 {
+    font-size: 34px;
+    color: #e0e0e0; /* Light heading color */
+}
+
+.form_data p {
+    color: #b7b7b7; /* Light text color */
+    font-size: 15px;
+    margin-top: 9px;
+}
+
+.form_data form {
+    margin-top: 45px;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.form_data form .form_input input {
+    width: 90%;
+    padding: 11px;
+    border: 1px solid #555; /* Dark border color */
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 14px;
+    margin-top: 9px;
+    font-size: 14px;
+    color: #fff; /* Light text color */
+    background-color: #555; /* Dark input background color */
+}
+
+.form_data form .form_input label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #e0e0e0; /* Light label color */
+}
+
+.form_input .two {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form_data form .form_input input:focus {
+    border: 2px solid rgba(185, 66, 225, 0.6);
+}
+
+.form_data form .form_input input::placeholder {
+    color: #b7b7b7; /* Light placeholder color */
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+
+.form_input .showpass {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    padding: 7px 10px;
+    margin-right: 5px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #532a65;
+    background-color: #EDF2F7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f5d22d; /* Yellow button color */
+    color: #333; /* Dark text color */
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+form .btn:hover {
+    background-color: #e5c41f; /* Darker yellow on hover */
+}
+
+.form_data form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form_data form a {
+    text-decoration: none;
+    color: #b7b7b7; /* Light link color */
+    border-bottom: 2px solid #8694a8;
+}
+
+.form_data form a:hover {
+    border-color: #f5d22d; /* Yellow border on hover */
 }

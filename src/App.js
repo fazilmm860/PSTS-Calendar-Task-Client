@@ -10,6 +10,8 @@ import Box from '@mui/material/Box';
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/LoginPage/ContextProvider/Context";
+import { ThemeProvider } from '@mui/material/styles';
+
 
 
 
@@ -57,16 +59,19 @@ function App() {
       {
         data ? (
           <>
-            <Header />
+          
+           <Header />
 
             <Routes>
               <Route path="/" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/dash" element={<Dashboard />} />
-              <Route path="/password-reset" element={<PasswordReset />} />
-              <Route path="/forgotpassword/:id/:token" element={<ForgotPassword />} />
+               <Route path="/password-reset" element={<PasswordReset />} />
+               <Route path="/forgotpassword/:id/:token" element={<ForgotPassword />} />
               <Route path="*" element={<Error />} />
             </Routes>
+           
+           
           </>
 
         ) : <Box sx={{ display: 'flex', justifyContent: "center", alignItems: "center", height: "100vh" }}>
