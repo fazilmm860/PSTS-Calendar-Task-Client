@@ -11,6 +11,7 @@ import { Routes, Route, useNavigate } from "react-router-dom"
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/LoginPage/ContextProvider/Context";
 import { ThemeProvider } from '@mui/material/styles';
+import Schedule from "./components/Calender/Schedule";
 
 
 
@@ -68,6 +69,7 @@ function App() {
               <Route path="/dash" element={<Dashboard />} />
                <Route path="/password-reset" element={<PasswordReset />} />
                <Route path="/forgotpassword/:id/:token" element={<ForgotPassword />} />
+               <Route path="/schedule" element={<Schedule/>}/>
               <Route path="*" element={<Error />} />
             </Routes>
            

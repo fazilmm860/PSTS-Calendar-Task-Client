@@ -15,6 +15,7 @@ import FormControlLabel from '@mui/material/FormControlLabel'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -177,7 +178,7 @@ const TaskScheduler = () => {
           <h2>Instructions</h2>
           <ul>
             <li>Select dates and you will be getting form to schedule the Interview</li>
-            <li>Please check the Schedule page and find the free slot</li>
+            <li>Please check the Schedule page and find the free slot <NavLink to='/schedule'>Schedule</NavLink></li>
             <li>Friday is Holiday </li>
           </ul>
         </div>
@@ -245,9 +246,11 @@ const TaskScheduler = () => {
         >
         <h2 id="form-modal" style={{ color: '#fff' }}>Enter Details</h2>
           <form onSubmit={handleFormSubmit}>
+          <label style={{ color: '#fff' }}>
+             Named
+            </label>
             <TextField
-              fullWidth
-              margin='normal'
+              fullWidth              
               label='Name'
               variant='outlined'
               name='name'
@@ -261,9 +264,11 @@ const TaskScheduler = () => {
                 },
               }}
             />
+            <label style={{ color: '#fff' }}>
+              Mobile
+            </label>
             <TextField
               fullWidth
-              margin='normal'
               label='Mobile'
               variant='outlined'
               name='mobile'
@@ -277,9 +282,11 @@ const TaskScheduler = () => {
                 },
               }}
             />
+            <label style={{ color: '#fff' }}>
+              Email
+            </label>
             <TextField
               fullWidth
-              margin='normal'
               label='Email'
               variant='outlined'
               name='email'
@@ -293,9 +300,11 @@ const TaskScheduler = () => {
                 },
               }}
             />
+            <label style={{ color: '#fff' }}>
+              Slot
+            </label>
             <Select
               fullWidth
-              margin='normal'
               label='Slot'
               variant='outlined'
               name='slot'
@@ -315,10 +324,11 @@ const TaskScheduler = () => {
               ))}
               </Select>
             
-           
+              <label style={{ color: '#fff' }}>
+              End-Time
+            </label>
              <Select
               fullWidth
-              margin='normal'
               label='End Time'
               variant='outlined'
               name='endTime'
@@ -338,10 +348,11 @@ const TaskScheduler = () => {
               ))}
               </Select>
               
-            
+              <label style={{ color: '#fff' }}>
+              Recruiter Name
+            </label>
             <Select
               fullWidth
-              margin='normal'
               label='Recruiter Name'
               variant='outlined'
               name='recruiterName'
@@ -361,7 +372,7 @@ const TaskScheduler = () => {
               <MenuItem value='Muthuvel Pandien'>Muthuvel Pandien</MenuItem>
               <MenuItem value='Mark Antony'>Mark Antony</MenuItem>
             </Select>
-            <Button type='submit' style={{marginTop: '1em', backgroundColor:'yellow' ,color:'black' }} variant='contained' color='primary'>
+            <Button type='submit' style={{marginTop: '1em', backgroundColor:'#f5d22d' ,color:'black' }} variant='contained' color='primary'>
               Submit
             </Button>
           </form>
