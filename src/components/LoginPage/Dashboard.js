@@ -6,11 +6,6 @@ import Box from '@mui/material/Box';
 import TaskScheduler from '../Calender/TaskScheduler';
 
 
-
-
-
-
-
 const Dashboard = () => {
 
     const { logindata, setLoginData } = useContext(LoginContext);
@@ -51,7 +46,7 @@ const Dashboard = () => {
 
     }, [])
     
-    const [selectedDate, setSelectedDate] = useState(null);
+   
 
 
   

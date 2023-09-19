@@ -137,7 +137,7 @@ const TaskScheduler = () => {
          // Show success message using Toastify
       toast.success('Your slot is allocated. Please check the schedule page for a confirmation.', {
         position: "top-center",
-        autoClose: 8000, // Adjust the duration as needed
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -154,7 +154,7 @@ const TaskScheduler = () => {
          // Show error message using Toastify
       toast.error('Error booking. Please try again. Check the Schedule', {
         position: "top-center",
-        autoClose: 3000,
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
