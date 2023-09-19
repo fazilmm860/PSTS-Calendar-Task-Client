@@ -52,7 +52,7 @@ const PasswordReset = () => {
                         <h1>Enter Your Email</h1>
                     </div>
 
-                    {message ? <p style={{ color: "green", fontWeight: "bold" }}>pasword reset link send Succsfully in Your Email</p> : ""}
+                    {message ? <p style={{ color: "white", fontWeight: "bold" }}>pasword reset link send Succsfully in Your Email</p> : ""}
                     <form>
                         <div className="form_input">
                             <label htmlFor="email">Email</label>
